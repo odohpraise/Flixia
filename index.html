@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>klassique Gallery| Welcome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="Stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+ <div>
+
+ 
+    <nav class="navbar navbar-light sticky-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/logo/Flixia logo.PNG" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            </a>
+            <div>
+                <button type="button" class="signUp"  data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                <button type="button" class="logIn"  data-bs-toggle="modal" data-bs-target="#loginModal">Log In</button>
+            </div>
+            
+          
+        </div>
+      </nav>
+
+    <div class="modal fade" id="signupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                        <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                             <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                             </div>
+                         </div>
+                         <div class="col-md-4">
+                              <label for="validationCustom02" class="form-label">Last name</label>
+                             <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                            <div class="valid-feedback">
+                             Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustomUsername" class="form-label">Username</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationCustom03" class="form-label">City</label>
+                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>   
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 modal-footer">
+                      <button class="btn " type="submit"  >Submit form</button>
+                    </div>
+                  </form>
+        </div>
+                </div>
+    </div> 
+  </div>
+
+  <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+                   <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                   <form class="row g-3 needs-validation" novalidate>
+                    <div class="mb-3 row">
+                      <label for="validationCustomUsername" class="form-label col-form-label col-sm-2">Username</label>
+                      <div class="input-group has-validation  col-sm-10">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="validationInputPassword"  class="col-sm-2 col-form-label">Password</label>
+                      <div class="col-sm-10 has-validation " >
+                        <input type="password" class="form-control" id="validationInputPassword" required>
+                        <div class="invalid-feedback">
+                          Please Enter Password
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 modal-footer ">
+                      <button class="btn loginButton " type="submit"  >Log In</button>
+                    </div>
+                    <div class="NewFlixia">
+                      <h5>New To Flixia</h5>
+                      <button type="button" class="btn loginButton"  data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                    </div>
+             </form>
+               </div>
+   </div>
+   </div>
+  </div>
+    
+  <main class="container-fluid" >
+    <!--Landing Area-->
+     <div id="landing" class="container">
+         <div id="landing-text">
+          <img class="top" src="./assets//logo/Flixia logo.PNG" alt="FLIXIA">
+             <div id="landing-text-inner">
+                <div id="test"> 
+                   <h1>Welcome To FLIXIA Video</h1>
+                    <h2>Enjoy Exclusive Originalas as well as popular movies and TV shows </h2>
+                    <div id="check">
+                      <div>
+                        <button class="btn" type="button"  data-bs-toggle="modal" data-bs-target="#loginModal">Flixia Member? log in</button>
+                        <a href="#images" class="btn" id="view-work">About Us</a>
+                      </div>
+                     
+                    </div>
+                  
+                  </div>
+               
+             </div>
+            
+         </div>
+     </div>
+    <div id="images">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1500">
+            <img  src="/assets/image/photo-1460881680858-30d872d5b530.avif" class="d-block w-100" alt="HollyWood">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Stream HollyWood Videos</h5>
+              <p>Flixia Gives You Ability To Stream Movies</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img src="/assets/image/photo-1572188863110-46d457c9234d.avif"class="d-block w-100" alt="Download">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="/assets/image/istockphoto-1342368897-170667a.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Download On Your Mobile Device</h5>
+              <p>Flixia Gives You Ability To download Movies on Your Devices</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class=" about">
+        <div class="row gx-5">
+          <div class="col-sm item">
+            <div>
+              <img  src="/assets/image/PV_Benefits_DataSaver_UPDATED.png" alt="DataUsage">
+            </div>
+            <div id="columnsHeading">
+              <h2>Data Saver</h2>
+            </div>
+            <div  id="columnContent">
+              <p>
+                Control data usage while downloading and watching videos on select phones or tablets.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm item">
+            <div>
+              <img src="/assets/image/PV_Benefits_X-Ray_UPDATED.png" alt="Xray">
+            </div>
+            <div id="columnsHeading">
+              <h2>X-Ray for more</h2>
+            </div>
+            <div id="columnContent">
+              <p>Use X-Ray for Movies and TV to identify actors and songs, explore actor bios, view trivia, and more.</p>
+            </div>
+          </div>
+          <div class="col-sm item">
+            <div>
+              <img src="/assets/image/PV_Benefits_Devices_UPDATED.png" alt="Watch ANywhere">
+          </div>
+             <div id="columnsHeading">
+              <h2>Watch anywhere</h2>
+             </div>
+             <div  id="columnContent">
+              <p>Enjoy from the web or with the Flixia Video app on your phone, tablet, or select Smart TVs — on up to 3 devices at once.</p>
+             </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+</main>
+<div id="footer" >
+<div class="link">
+  <a href="#"> Terms and Private Notice</a>
+  <a href="#"> Send us feedback</a>
+  <a href="#">Help</a>
+</div>
+  <div class="ptags">
+    <p>&copy;2022</p>
+    <p>FLIXIA</p>
+  </div>   
+</div>
+  
+ </div>
+   
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
