@@ -25,7 +25,10 @@ h2{
     text-transform: capitalize;
     margin: 0;
 }
-img{
+.log{
+    display: none;
+}
+.about img{
     display:block ;
     width: 100%;
 }
